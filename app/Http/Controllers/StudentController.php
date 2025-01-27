@@ -13,7 +13,7 @@ class StudentController extends Controller
      */
     public function index()
     {
-        //6.  Дарсдан кочган укувчилар сони (ва кайси дарсларган конганлари)
+    
         $lessons = lesson::with('classGroups')->get();
         dd($lessons);
     }
